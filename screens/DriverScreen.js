@@ -1,11 +1,14 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Modal } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { BottomSheet } from '../components/BottomSheet';
 
 const DriverScreen = () => {
   return (
-    <View style = {styles.container}>
-        <Text style={{color:'white'}}>Hello from DriverScreen</Text>
-    </View>
+    <GestureHandlerRootView style={{flex:1}}>
+      <View style = {styles.container}></View>
+      <BottomSheet/>
+    </GestureHandlerRootView>
   )
 }
 
